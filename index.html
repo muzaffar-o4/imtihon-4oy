@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IP currencies</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand">Developer_o7</a>
+        <form class="d-flex" role="search">
+          <input
+            id="searchFilter"
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <select class="form-select" aria-label="Default select example">
+            <option selected disabled>Sort menu</option>
+            <option value="up">Up</option>
+            <option value="down">Down</option>
+            <option>Reset</option>
+          </select>
+          <button type="button" class="btn btn-primary position-relative mx-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-bag-check-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"
+              />
+            </svg>
+            <span
+              id="visual"
+              class="position-absolute top-0 start-100 translate-middle rounded-pill bg-danger"
+            >
+              <span id="span__num"></span>
+              <span id="visual" class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="spinner__div">
+      <img class="img__spinner" src="./image/Spinner.svg" alt="Spinner svg" />
+    </div>
+
+    <div class="container py-4">
+      <table class="table">
+        <thead class="bg-danger text-bg-primary">
+          <tr>
+            <th scope="col">Nomer</th>
+            <th scope="col">Valyuta nomi</th>
+            <th scope="col">Harfli kod</th>
+            <th scope="col">Qiymat</th>
+            <th scope="col">Yangilangan sana</th>
+            <th scope="col">Bookmark</th>
+          </tr>
+        </thead>
+        <tbody class="t-body"></tbody>
+      </table>
+    </div>
+
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="modal__btn btn btn-primary d-none"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Website cookie
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Assalomu alaykum! <br />
+            Bizni telegram kanalimizga obuna bo'ling
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Ok
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./bundle js/bootstrap.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
